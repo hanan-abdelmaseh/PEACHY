@@ -1,0 +1,36 @@
+
+/* .contactus h4{
+    font-size:  
+    100px; /* need to handle size of font 
+    
+    font-weight: 800;
+    color: var(--mainColor);
+    text-transform: uppercase;
+    font-family: sen;
+    text-align: center
+} */
+input{
+    border-radius: 0.9rem;
+    background-color: #FFD39F;
+    border: 0;
+}
+.send{
+    text-transform: uppercase;
+    border-radius: 
+    61px;
+    border: 3px solid var(--mainColor);
+    padding: 10px 40px;
+}
+
+ul li{
+    list-style-type: none;
+    font-size: 14px;
+}
+i{
+    color: var(--mainColor);
+    font-size: 18px;
+}
+
+.warn{
+    color:  var(--mainColor);
+}

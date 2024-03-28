@@ -1,0 +1,25 @@
+.mainPage {
+    background-image: url(../../../assets/images/testimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-color: var(--mainColor);
+}
+
+h4 {
+    color: #FFFFFF;
+}
+
+.card {
+    border-radius: 30px;
+    padding:1px 10px
+}
+
+
+
+.fa {
+    color: var(--mainColor);
+}
+
+

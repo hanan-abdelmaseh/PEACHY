@@ -1,0 +1,63 @@
+<div class="container" id="contact">
+    <div class="row ">
+        <div class="col-md-12 ">
+            <div class="contactus ">
+                <h4 class="mb-3">
+                    
+contact us 
+                </h4>
+            </div>
+           
+        </div>
+    
+    </div>
+    <div class="row  d-flex justify-content-center align-items-center   pt-2 mb-5">
+        <div class="col-md-3  col-sm-12 ">
+            <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)" >
+                <div class="inputs">
+                    <input type="text" class="form-control mb-3" formControlName="name"
+                     placeholder="Full Name" name="name">
+                     <div class="warn"
+                      *ngIf="myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched)"
+                    >
+                    
+                        Please provide a Name.
+                      </div>
+                    <input type="text" class="form-control mb-3" formControlName="email"
+                     placeholder="Email" name="email">
+                     <div class="warn"
+                     *ngIf="myForm.get('email')?.invalid && (myForm.get('email')?.dirty || myForm.get('email')?.touched)"
+                     >
+                     
+                         Please provide Email.
+                       </div>
+                    <input type="text" class="form-control mb-3" formControlName="phone"
+                     placeholder="Phone Number" name="phone" >
+                     <div 
+                     class="warn"
+                     *ngIf="myForm.get('phone')?.invalid && (myForm.get('phone')?.dirty || myForm.get('phone')?.touched)"
+                     >
+                     
+                         Please provide a phone.
+                       </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button type="submit" class="btn send " [disabled]="myForm.invalid"> send</button>
+                </div>
+              
+               
+            </form>
+
+        </div>
+        <div class="col-md-3  col-sm-12 ">
+            <ul>
+                <li class="mb-3">
+                    <i class="fa fa-envelope me-2" ></i> upskilling.eg1@gmail.com
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone me-2"></i> +20 115 493 2137
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
